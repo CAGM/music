@@ -1,0 +1,281 @@
+html,body,div,ul,li,span,button{
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  ul,li{
+    list-style: none;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  #music{
+    width: 250px;
+    display: block;
+    transition: width 1s;
+
+    position: absolute;
+    text-align: center;
+    background-color: rgb(73, 233, 121)
+  }
+  #music #musicImg{
+    width: 35px;
+    height: 35px;
+    float: left;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./music.png);
+  }
+  
+  #music #musicTitle{
+  width:135px;
+  height:35px;
+  float: left;
+  text-align: center;
+  line-height: 35px;
+  overflow: hidden;
+  position: relative;
+  }
+  #music #musicTitle div{
+      overflow: hidden;
+  }
+  #music #musicTitle #musicPlay{
+    position: absolute;
+    width: 135px;
+    top: 1px;
+    height: 35px;
+    display: none;
+    background-color: rgb(73, 233, 121);
+    text-align: center;
+  }
+  
+  #music #musicTitle #musicPlay span,#musicButton span{
+
+    width: 10px;
+    height: 20px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    margin-top: 0.3em;
+  }
+  #music #musicTitle #musicPlay #play{
+    content:"";
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:50%;
+	margin-top:auto;
+	margin-bottom:auto;
+	margin-left:-.3em;
+	width:0;
+	height:0;
+	border-top:.4em solid transparent;
+	border-bottom:.4em solid transparent;
+	border-left:.6em solid rgb(255, 255, 255);
+  }
+
+  #music #musicTitle #musicPlay #pause {
+    box-sizing:border-box;
+	content:"";
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:50%;
+	margin-top:auto;
+	margin-bottom:auto;
+	margin-left:-.30em;
+	width:.2em;
+	height:.9em;
+	background-color:rgb(255, 255, 255);
+}
+
+#music #musicTitle #musicPlay #pause:after {
+	box-sizing:border-box;
+	content:"";
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:50%;
+	margin-top:auto;
+	margin-bottom:auto;
+	margin-left:.15em;
+	width:.2em;
+	height:.9em;
+	background-color:rgb(255, 255, 255);
+}
+#music #musicTitle #musicPlay #left{
+    box-sizing:border-box;
+	content:"";
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:70%;
+	margin-top:auto;
+	margin-bottom:auto;
+	margin-left:-.4em;
+	width:0;
+	height:0;
+	border-top:.45em solid transparent;
+	border-bottom:.45em solid transparent;
+	border-left:.6em solid rgb(255, 255, 255);
+}
+#music #musicTitle #musicPlay #left:after{
+    box-sizing:border-box;
+	content:"";
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:50%;
+	margin-top:auto;
+	margin-bottom:auto;
+	margin-left:.05em;
+	width:0;
+	height:0;
+	border-top:.45em solid transparent;
+	border-bottom:.45em solid transparent;
+	border-left:.6em solid rgb(255, 255, 255);
+}
+#music #musicTitle #musicPlay #right{
+    box-sizing:border-box;
+	content:"";
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:30%;
+	margin-top:auto;
+	margin-bottom:auto;
+	margin-left:-.2em;
+	width:0;
+	height:0;
+	border-top:.45em solid transparent;
+	border-bottom:.45em solid transparent;
+	border-right:.6em solid rgb(255, 255, 255);
+}
+#music #musicTitle #musicPlay #right:after{
+    box-sizing:border-box;
+	content:"";
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:50%;
+	margin-top:auto;
+	margin-bottom:auto;
+	margin-left:-.65em;
+	width:0;
+	height:0;
+	border-top:.45em solid transparent;
+	border-bottom:.45em solid transparent;
+    border-right:.6em solid rgb(255, 255, 255);
+}
+
+  #music #musicButton{
+    width: 80px;
+    height: 35px;
+    float: left;
+  }
+  #music #musicButton #musiclistShow{
+    box-sizing:border-box;
+	content:"";
+	position:absolute;
+	top:0.6em;
+	right:-12em;
+	bottom:0;
+	left:0;
+	width:1.2em;
+	height:.15em;
+	background-color:#fff;
+}
+#music #musicButton #musiclistShow:after{
+    box-sizing:border-box;
+	content:"";
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin:auto;
+	width:1.2em;
+	height:.9em;
+	border-width:.15em;
+	border-style:solid none;
+	border-color:#fff;
+}
+#music #musicButton #musiclyrirShow{
+    border: 1px solid white;
+    width: 1.5em;
+    height: 1.5em;
+    color: white;
+    position: relative;
+    border-radius: 1em;
+}
+  #music #musicList{
+    text-align: center;
+    display: none;
+    background-color: white;
+    width: 250px;
+    float: left;
+    position: relative;
+  }
+  #music #musicList span{
+      color: rgb(73, 233, 121);
+  }
+  #music #musicList #musicTypeNmae li:hover{
+      color: rgb(73, 233, 121)
+  }
+  #music #musicList #musicTypeNmae li{
+    height: 20px;
+  }
+  #music #musicLyric{
+      background-color: rgb(73, 233, 121);;
+      position:absolute;
+      top: 2.1em;
+      width: 250px;
+      height: 20px;
+      display: none;
+      z-index: -10;
+      overflow: hidden;
+      color: white;
+      content: '.';
+  }
+  #music #musicList #musicName{
+    overflow: auto;
+    height: 350px;
+  }
+  #music #musicList #musicName ul,li{
+
+    transition: background-color 0.3s;
+    overflow: hidden;
+  }
+
+  #music #musicList #musicName ul li{
+    height: 20px;
+    text-align: left;
+    padding: 6px;
+    padding-left: 10px;
+  }
+  #music #musicList ul li:hover{
+     background-color: rgb(173, 173, 173);
+  }
+  #music #musicList div{
+    cursor: pointer;
+    
+  }
+  #music #musicList #musicType{
+    transition: height 1s;
+    height: 20px;
+    overflow: hidden;
+  }
+  #music #musicList #musicType:hover {
+     height: 225px;
+  }
+  #music #musicList #musicType #musicTypeNmae div:hover{
+    color: rgb(51, 80, 173)
+  }
+  #prompt,#musicError{
+     display: none; 
+  }
+  .play{
+    color: rgb(47, 143, 143);
+  }
