@@ -1,0 +1,54 @@
+<!DOCTYPE HTML5>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+
+        <title>demo1</title>
+        <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+        <link rel="stylesheet" type="text/css" href='./music.css'></link>
+    </head>
+    <body>
+        <div id="music" draggable="true">
+            <div id="musicImg"></div>
+                <div id="musicTitle">
+                    <div>ready</div>
+                    <div id="musicPlay">
+                        <span id="left"></span>
+                        <span id='pause'></span>
+                        <span id='right'></span>
+                      </div>
+                </div>
+            <div id="musicLyric"></div>
+            <div id="musicButton">
+                <span id="musiclyrirShow">词</span>
+                <span id="musiclistShow"></span>
+            </div>
+            <div id='musicList'>
+              <div id='musicType'>
+                <span>新歌榜</span>
+                <div id="musicTypeNmae">
+                  <ul>
+                    <li>新歌榜</li>
+                    <li>热歌榜</li>
+                    <li>摇滚榜</li>
+                    <li>爵士</li>
+                    <li>流行</li>
+                    <li>欧美金曲榜</li>
+                    <li>经典老歌榜</li>
+                    <li>情歌对唱榜</li>
+                    <li>影视金曲榜</li>
+                    <li>网络歌曲榜</li>
+                  </ul>
+                </div>
+              </div>
+              <div id="musicName"></div>
+              <div id="musicDown">v</div>
+              <div id="prompt">再拉也是没有了╮(╯▽╰)╭</div>
+            </div>
+            <audio autoplay='false' id="audio"></audio>
+            <span id='musicError'>获取错误请刷新或者稍后再试</span>
+          </div>
+    
+    </body>
+    <script src="music.js"></script>
+</html>
